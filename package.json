@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start":  "npm run build && node server.js"
+    "start":  "node server.js"
   },
   "devDependencies": {
     "sass": "^1.69.4",
