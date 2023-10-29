@@ -1,0 +1,26 @@
+{{#> layouts/page title="Список чатов"}}
+    <div class="messenger">
+
+        <div class="messenger__chatlist">
+            <a class="messenger__chatlist-profile" href="">Профиль ></a>
+            <form class="messenger__chatlist-search" action="">
+                <label class="messenger__chatlist-label">
+                    <img class="messenger__chatlist-icon" src="../../assets/icons/search.png" alt="">
+                    <input class="messenger__chatlist-input" type="text" name="search" placeholder="Поиск">
+                </label>
+            </form>
+            <div class="messenger__chatlist-chats">
+                {{#each chats}}
+                    {{> chat/chat }}
+                {{/each}}
+            </div>
+        </div>
+
+        <div class="messenger__chat">
+            {{#each chats}}
+                {{> item/item}}
+            {{/each}}
+        </div>
+
+    </div>
+{{/layouts/page}}

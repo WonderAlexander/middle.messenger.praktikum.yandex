@@ -1,0 +1,24 @@
+// utils
+@import '../styles/base.scss';
+@import '../styles/variables';
+@import '../styles/extends.scss';
+@import '../styles/mixins.scss';
+
+// partials & layouts
+@import '../../partials/button/button.scss';
+@import '../../partials/input/input.scss';
+@import '../../partials/link/link.scss';
+@import '../../partials/tech-page/tech-page.scss';
+@import '../../partials/layouts/card/card.scss';
+@import '../../partials/chat/chat.scss';
+@import '../../partials/item/item.scss';
+@import '../../partials/layouts/content-center/content-center.scss';
+@import '../../partials/person/person-item.scss';
+
+// pages
+@import '../../pages/login/login.scss';
+@import '../../pages/register/signin.scss';
+@import '../../pages/messenger/messenger.scss';
+@import '../../pages/profile/profile.scss';
+
+

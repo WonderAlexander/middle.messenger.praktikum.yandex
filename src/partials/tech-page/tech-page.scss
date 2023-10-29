@@ -1,0 +1,12 @@
+.tech__page {
+
+    &-title {
+        @extend .technical-title;
+        margin-bottom: 20px;
+    }
+    
+    &-subtitle {
+        @extend .technical-subtitle;
+        margin-bottom: 60px;
+    }
+}

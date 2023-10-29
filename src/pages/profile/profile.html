@@ -1,0 +1,62 @@
+{{#> layouts/page }}
+    <div class="profile">
+        <div class="profile__back">
+            <button class="profile__back-btn">
+                <img src="../../assets/icons/right-arrow.png" alt="">
+            </button>
+        </div>
+
+        <div class="profile__person">
+
+            <div class="person__header">
+                <div class="person__header-avatar">
+                    <img src="../../assets/icons/profile-avatar.png" alt="">
+                    <div class="avatar__change">
+                        <button type="button">Поменять<br>аватар</button>
+                    </div>
+                </div>
+                <h1 class="person__header-name">Иван</h1>
+            </div>
+
+            {{#if isChangePassword }}
+            <form class="person__data" action="">
+                {{> person/person-item label="Старый пароль" type="password" value="password" disabled="false" name="oldPassword"}}
+                <hr class="profile__line">
+                {{> person/person-item label="Новый пароль" type="password" value="password" disabled="false" placeholder="Новый пароль" name="newPassword"}}
+                <hr class="profile__line">
+                {{> person/person-item label="Повторите новый пароль" type="password" value="password" disabled="false" placeholder="Новый пароль" name="newPassword"}}
+            </form>
+            {{else}}
+            <form class="person__data" action="">
+                {{> person/person-item label="Почта" type="email" value="pochta@yandex.ru" name="email"}}
+                <hr class="profile__line">
+                {{> person/person-item label="Логин" type="text" value="ivanivanov" name="login"}}
+                <hr class="profile__line">
+                {{> person/person-item label="Имя" type="text" value="Иван" name="first_name"}}
+                <hr class="profile__line">
+                {{> person/person-item label="Фамилия" type="text" value="Иванов" name="second_name"}}
+                <hr class="profile__line">
+                {{> person/person-item label="Имя в чате" type="text" value="Иван" name="display_name"}}
+                <hr class="profile__line">
+                {{> person/person-item label="Телефон" type="tel" value="+7 (909) 967 30 30" name="phone"}}
+            </form>
+            {{/if}}
+
+            <div class="person__actions">
+                <div class="person__actions-item">
+                {{#if isChange }}
+                <button class="person__actions-btn" type="submit">Сохранить</button>
+                {{else}}
+                <div class="person__actions-item">
+                    <button class="person__actions-change" type="button">Изменить данные</button>
+                    <hr class="profile__line">
+                    <button class="person__actions-change" type="button">Изменить пароль</button>
+                    <hr class="profile__line">
+                    <button class="person__actions-exit" type="button">Выйти</button>
+                </div>
+                {{/if}}
+            </div>
+        </div>
+
+    </div>
+{{/layouts/page}}

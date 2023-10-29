@@ -1,0 +1,19 @@
+{{#> layouts/page title="Страница регистрации" }}
+<div class="page">
+    {{#> layouts/card/card card-title="Регистрация"}}
+        <form action="" class="signin__form">
+            {{> input/input type="email" input-label="Почта" input-placeholder="pochta@yandex.ru" error-msg="Некорректная почта" name="email" }}
+            {{> input/input type="text" input-label="Логин" input-placeholder="ivanivanov" error-msg="Логин уже занят" name="login" }}
+            {{> input/input type="text" input-label="Имя" input-placeholder="Иван" error-msg="Некорректное имя" name="first_name" }}
+            {{> input/input type="text" input-label="Фамилия" input-placeholder="Иванов" error-msg="Некорректная фамилия" name="second_name" }}
+            {{> input/input type="tel" input-label="Телефон" input-placeholder="+7 (909) 967 30 30" error-msg="Некорректный номер телефона" name="phone" }}
+            {{> input/input type="password" input-label="Пароль" input-placeholder="Пароль" error-msg="" name="password" }}
+            {{> input/input type="password" input-label="Пароль (ещё раз)" input-placeholder="Пароль (ещё раз)" error-msg="Пароли не совпадают" name="password_repeat" }}
+            <div class="signin__form-btns">
+                {{> button/button class="btn" type="submit" label="Зарегистрироваться" }}
+                {{> link/link href="../signin/signin.html" target="_blank" link-name="Войти"}}
+            </div>
+        </form>
+    {{/layouts/card/card}}
+</div>
+{{/layouts/page}}
