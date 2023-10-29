@@ -15,7 +15,7 @@
     &-avatar {
         width: 47px;
         height: 47px;
-        border-radius: 50%;        
+        border-radius: 50%;
         margin-right: 10px;
     }
 
@@ -38,7 +38,7 @@
 .item__dialogue {
 
     padding-top: 48px;
-    
+
     &-date {
         @extend .primary-text;
         color: $font-secondary;
@@ -232,7 +232,7 @@
 }
 
 .chat__line {
-    width: 94%; 
+    width: 94%;
     padding: 0 10px;
     border-top: 1px solid #EAEAEA;
 }

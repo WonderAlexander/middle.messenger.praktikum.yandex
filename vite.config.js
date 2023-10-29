@@ -32,7 +32,7 @@ export default defineConfig({
         partialDirectory: resolve(__dirname, 'src/partials'),
         context: {
             chats: [
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Андрей',
                     personMsg: 'Изображение',
@@ -41,7 +41,7 @@ export default defineConfig({
                     chatUnread: '2',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Киноклуб',
                     personMsg: '',
@@ -50,7 +50,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Илья',
                     personMsg: 'Друзья, у меня для вас особенный выпуск новостей!...',
@@ -59,7 +59,7 @@ export default defineConfig({
                     chatUnread: '4',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Вадим',
                     personMsg: 'Круто!',
@@ -68,7 +68,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: true
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'тет-а-теты',
                     personMsg: 'И Human Interface Guidelines и Material Design рекомендуют...',
@@ -77,7 +77,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: '1, 2, 3',
                     personMsg: 'Миллионы россиян ежедневно проводят десятки часов свое...',
@@ -86,7 +86,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Design Destroyer',
                     personMsg: 'В 2008 году художник Jon Rafman  начал собирать...',
@@ -95,7 +95,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Day.',
                     personMsg: 'Так увлёкся работой по курсу, что совсем забыл его анонсир...',
@@ -104,7 +104,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Стас Рогозин',
                     personMsg: 'Можно или сегодня или завтра вечером.',
@@ -113,7 +113,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Александр Болдин',
                     personMsg: 'Записался на Яндекс Практикум)',
@@ -122,7 +122,7 @@ export default defineConfig({
                     chatUnread: '1',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'ИСБ России',
                     personMsg: 'Сегодня тренировки не будет',
@@ -131,7 +131,7 @@ export default defineConfig({
                     chatUnread: '5',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Старые друзья',
                     personMsg: '',
@@ -140,7 +140,7 @@ export default defineConfig({
                     chatUnread: '',
                     isActive: false
                 },
-                {   
+                {
                     chatAvatar: 'https://placehold.co/60x60',
                     personName: 'Чат-заглушка',
                     personMsg: 'Сообщение',
