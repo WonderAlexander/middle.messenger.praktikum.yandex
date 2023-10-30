@@ -1,0 +1,9 @@
+.form__link {
+    color: $primary;
+    @extend .primary-text;
+    font-size: 11px;
+    line-height: 11px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 14px;
+}

@@ -1,0 +1,53 @@
+.form__input-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.form__input-label {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 100;
+
+    color: $font-secondary;
+    display: block;
+    @extend .primary-text;
+    @include text__sm;
+}
+
+.form__input-field {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid $primary;
+    @extend .primary-text;
+    color: $font-primary;
+
+    padding: 3px 0;
+
+    &::placeholder {
+        @extend .primary-text;
+        color: $font-secondary;
+    }
+
+    &:focus {
+        outline: none !important;
+
+        border-radius: 0;
+        outline-style: none;
+        box-shadow: none;
+    }
+}
+
+
+.form__input-error {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    z-index: 100;
+
+    color: $font-negative;
+    @include text__sm;
+    font-size: 8px;
+    line-height: 8px;
+}

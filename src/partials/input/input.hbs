@@ -1,0 +1,9 @@
+<div class="form__input-item">
+    {{#if isTyping}}
+        <label class="form__input-label" for="{{ input-id }}">{{ input-label }}</label>
+    {{/if}}
+    <input id="{{ input-id }}" class="form__input-field" type="{{ type }}" placeholder="{{ input-placeholder }}" name="{{ name }}">
+    {{#if hasError}}
+        <p class="form__input-error">{{ error-msg }}</p>
+    {{/if}}
+</div>

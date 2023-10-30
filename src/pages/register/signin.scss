@@ -1,0 +1,8 @@
+.btn {
+    @include btn;
+}
+
+.signin__form {
+    @include form;
+    @extend .signin__form;
+}

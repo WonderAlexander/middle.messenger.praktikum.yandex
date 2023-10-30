@@ -1,0 +1,23 @@
+{
+  "name": "sprint_1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.69.4",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "vite-plugin-handlebars": "^1.6.0"
+  }
+}

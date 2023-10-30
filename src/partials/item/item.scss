@@ -1,0 +1,238 @@
+.item__header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    &-person {
+        display: flex;
+        align-items: center;
+    }
+
+    &-avatar {
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &-name {
+        font-family: $main-family;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 13px;
+
+        @include reset;
+    }
+
+    &-actions {
+        @include btn-reset;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+.item__dialogue {
+
+    padding-top: 48px;
+
+    &-date {
+        @extend .primary-text;
+        color: $font-secondary;
+        font-size: 12px;
+        font-weight: 12px;
+        text-align: center;
+    }
+
+    &-inner {
+        // display: flex;
+        // justify-content: space-between;
+
+        padding: 30px;
+
+        .dialogue__person {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+
+            &-message {
+                width: 100%;
+                max-width: 600px;
+
+                @include message;
+                @extend .message-person;
+
+                margin-bottom: 10px;
+
+                p {
+                    @include reset;
+                }
+            }
+
+            &-time {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+
+                @include text__sm;
+                color: $font-secondary;
+            }
+
+            &-img {
+                width: 100%;
+
+                &-wrapper {
+                    position: relative;
+                    max-width: 315px;
+                }
+
+                &-time {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+
+                    display: inline-block;
+                    background-color: #52525280;
+                    border-radius: 10px;
+
+                    padding: 2px 8px;
+
+                    @include text__sm;
+                    color: #fff;
+                }
+            }
+        }
+
+        .dialogue__me {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            &-message {
+                width: 100%;
+                max-width: 500px;
+
+                @include message;
+                @extend .message-me;
+
+                margin-bottom: 10px;
+
+                p {
+                    @include reset;
+                }
+            }
+
+            &-status {
+                position: absolute;
+                bottom: 8px;
+                right: 37px;
+
+                width: 10px;
+            }
+
+            &-time {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+
+                @include text__sm;
+                color: $primary;
+            }
+        }
+
+    }
+}
+
+.dialogue__panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    &-inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px 30px;
+    }
+
+    &-pin {
+        @include btn-reset;
+        width: 32px;
+        height: 32px;
+    }
+
+    &-form {
+        width: 97%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            width: 100%;
+            background-color: #efefef;
+            border: none;
+
+            padding: 10px 20px;
+            border-radius: 30px;
+
+            margin-right: 10px;
+
+            @extend .primary-text;
+            font-size: 12px;
+            line-height: 12px;
+
+            &::placeholder {
+                @extend .primary-text;
+                font-size: 12px;
+                line-height: 12px;
+            }
+
+            &:focus {
+                outline: none !important;
+
+                border-radius: 30px;
+                outline-style: none;
+                box-shadow: none;
+            }
+        }
+
+        button {
+            @include btn-reset;
+
+            position: relative;
+
+            width: 28px;
+            height: 28px;
+            background-color: $primary;
+            border-radius: 50%;
+
+            img {
+                width: 10px;
+                height: 10px;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+
+                transform: translate3d(-50%, -50%, 0);
+            }
+        }
+    }
+}
+
+.chat__line {
+    width: 94%;
+    padding: 0 10px;
+    border-top: 1px solid #EAEAEA;
+}

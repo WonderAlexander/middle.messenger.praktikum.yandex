@@ -1,0 +1,27 @@
+.person__data-item {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+
+    label {
+        @extend .primary-text;
+        font-size: 13px;
+        font-weight: 13px;
+    }
+
+    input {
+        border: 0;
+        outline: none;
+
+        @extend .primary-text;
+        font-size: 13px;
+        font-weight: 13px;
+        color: $font-secondary;
+
+        text-align: right;
+    }
+}

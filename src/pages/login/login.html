@@ -1,0 +1,14 @@
+{{#> layouts/page title="Страница логина" }}
+    <main class="page">
+        {{#> layouts/card/card card-title="Вход"}}
+            <form action="" class="login__form">
+                {{> input/input type="text" input-label="Логин" input-placeholder="Логин" error-msg="Неверный логин" name="login" }}
+                {{> input/input type="password" input-label="Пароль" input-placeholder="Пароль" error-msg="Неверный пароль" name="password"}}
+                <div class="login__form-btns">
+                    {{> button/button class="btn" type="submit" label="Авторизоваться" }}
+                    {{> link/link href="../register/signin.html" target="_self" link-name="Нет аккаунта?"}}
+                </div>
+            </form>
+        {{/layouts/card/card}}
+    </main>
+{{/layouts/page}}

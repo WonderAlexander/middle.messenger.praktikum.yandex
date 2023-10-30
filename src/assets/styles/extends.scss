@@ -1,0 +1,38 @@
+// font
+.primary-text {
+    font-family: $main-family;
+    font-weight: 500;
+}
+
+.technical-title {
+    font-family: $main-family;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.technical-subtitle {
+    font-family: $main-family;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
+// form
+.login__form {
+    min-height: 400px;
+}
+
+.signin__form {
+    min-height: 540px;
+}
+
+//message
+.message-person {
+    background-color: #f8f8f8;
+}
+
+.message-me {
+    background-color: #E4EDFD;
+}
