@@ -1,5 +1,5 @@
 {{#> layouts/page title="Страница регистрации" }}
-<div class="page">
+<main class="page">
     {{#> layouts/card/card card-title="Регистрация"}}
         <form action="" class="signin__form">
             {{> input/input type="email" input-label="Почта" input-placeholder="pochta@yandex.ru" error-msg="Некорректная почта" name="email" }}
@@ -11,9 +11,9 @@
             {{> input/input type="password" input-label="Пароль (ещё раз)" input-placeholder="Пароль (ещё раз)" error-msg="Пароли не совпадают" name="password_repeat" }}
             <div class="signin__form-btns">
                 {{> button/button class="btn" type="submit" label="Зарегистрироваться" }}
-                {{> link/link href="../signin/signin.html" target="_blank" link-name="Войти"}}
+                {{> link/link href="../login/login.html" target="_self" link-name="Войти"}}
             </div>
         </form>
     {{/layouts/card/card}}
-</div>
+</main>
 {{/layouts/page}}
